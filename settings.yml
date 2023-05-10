@@ -1,0 +1,29 @@
+---
+# Credentials
+fmc_hostname: 100.x.x.x
+fmc_username: devnet-user
+fmc_password: Password123
+
+# New site build information
+ftd_hostname: LON-FTD-01
+ftd_username: admin
+ftd_password: Password123
+acp_parent: Regional Access Policy
+acp_name: London Access Policy
+acp_rule: Temp-Allow-All
+
+# SDA informaton
+local_asnum: 100
+sda_asnum: 200
+
+# Reporting
+task_width: 80
+result_width: 20
+result_pass: Success
+result_fail: Failed
+result_skip: Skip, already done
+
+# Timer
+verify_delay: 6
+verify_retry_normal: 5
+verify_retry_extended: 60

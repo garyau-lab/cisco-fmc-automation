@@ -1,0 +1,11 @@
+interface_name,interface_type,logical_name,security_zone,vn_name,ip_address,bgp_peer,lag_member
+Ethernet1/1,PhysicalInterface,outside,outside,Global,100.64.0.163/24,,
+Port-channel1,EtherChannelInterface,,,,,,"Ethernet1/2,Ethernet1/3"
+Port-channel1.10,SubInterface,fabric-underlay,fabric-underlay,fabric-underlay,100.124.64.1/30,100.124.64.2,
+Port-channel1.3001,SubInterface,fabric-corp,fabric-corp,fabric-corp,100.124.79.2/30,100.124.79.1,
+Port-channel1.3002,SubInterface,fabric-partner,fabric-partner,fabric-partner,100.124.79.6/30,100.124.79.5,
+Port-channel1.3003,SubInterface,fabric-guest,fabric-guest,fabric-guest,100.124.79.10/30,100.124.79.9,
+Ethernet1/5,PhysicalInterface,server,server,Global,100.124.90.1/24,,
+Ethernet1/6.2,SubInterface,server2,server,Global,100.124.91.1/24,,
+Ethernet1/7.3,SubInterface,server3,server,Global,100.124.92.1/24,,
+Port-channel2,EtherChannelInterface,,,,,,Ethernet1/4

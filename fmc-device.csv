@@ -1,0 +1,3 @@
+hostname,ip_address,register_key,nat_id,ha_name,ha_role,ha_interface,ha_intf_name,ha_ip_address,ha_mask,ssh-access-list
+LON-FTD-01,100.64.0.161,Cisco123,LONFTD01,LON-FTD-HA,active,Ethernet1/8,FAILOVER,192.0.0.1,255.255.255.252,"10.0.0.0/8,172.16.0.0/12,192.168.0.0/16"
+LON-FTD-02,100.64.0.162,Cisco123,LONFTD02,LON-FTD-HA,standby,Ethernet1/8,FAILOVER,192.0.0.2,255.255.255.252,"10.0.0.0/8,172.16.0.0/12,192.168.0.0/16"

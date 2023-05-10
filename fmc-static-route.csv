@@ -1,0 +1,12 @@
+vn_name,network,outgoing_intf,next_hop
+Global,default-route,outside,100.64.0.1
+Global,"ROOT-SDA-BORDER-VLAN10,ROOT-SDA-BORDER-LO0,ROOT-SDA-AP,ROOT-SDA-LAN-AUTO",fabric-underlay,
+Global,"ROOT-SDA-USER,ROOT-SDA-PHONE,ROOT-SDA-PRINTER,ROOT-SDA-CCTV",fabric-corp,
+fabric-underlay,default-route,outside,
+fabric-underlay,ROOT-SDA-SERVER,server,
+fabric-corp,default-route,outside,
+fabric-corp,ROOT-SDA-SERVER,server,
+fabric-partner,default-route,outside,
+fabric-partner,"ROOT-SDA-DHCP-SERVERS,ROOT-SDA-DNS-SERVERS",server,
+fabric-guest,default-route,outside,
+fabric-guest,"ROOT-SDA-DHCP-SERVERS,ROOT-SDA-DNS-SERVERS",server,
